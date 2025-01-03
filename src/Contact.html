@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
-    <title>Home</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Sen" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Signika Negative"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
   </head>
   <body>
     <div>
       <header class="header">
         <nav>
-          <ul>
+          <input id="nav-toggle" type="checkbox" />
+          <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="AboutMe.html">About Me</a></li>
             <li><a href="Portifolio.html">Portifolio</a></li>
@@ -20,6 +28,11 @@
             <li><a href="Achievement.html">Achievement</a></li>
             <li><a href="Contact.html">Contact</a></li>
           </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
         </nav>
         <div class="logo">
           <img class="logo-img" src="images\logo.JPG" />
@@ -33,7 +46,7 @@
             <img src="images/allcontact.jpg" alt="all_contact" />
             <p><a href="etsuba24@gmail.com">Email</a></p>
             <p><a href="tel:+251911388243">+251-91-138-8243</a></p>
-            <p><address>Ethiopia/Addis Ababa/Akaki Kality</address></p>
+            <address>Ethiopia/Addis Ababa/Akaki Kality</address>
           </div>
           <div>
             <img src="images/allinone.jpg" alt="all_social_media" />
@@ -44,17 +57,23 @@
           <div>
             <h2>Send me message</h2>
             <form action="#" method="post">
-              <label for="name">Name *</label><br>
-              <input type="text" id="name" name="name" required><br><br>
-      
-              <label for="email">E-mail *</label><br>
-              <input type="email" id="email" name="email" required><br><br>
-      
-              <label for="message">Why do you want to contact *</label><br>
-              <textarea id="message" name="message" rows="4" required></textarea><br><br>
-      
+              <label for="name">Name *</label><br />
+              <input type="text" id="name" name="name" required /><br /><br />
+
+              <label for="email">E-mail *</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+
+              <label for="message">Why do you want to contact *</label><br />
+              <textarea id="message" name="message" rows="4" required></textarea
+              ><br /><br />
+
               <button type="submit">Submit</button>
-          </form>
+            </form>
           </div>
         </main>
       </section>
@@ -63,18 +82,19 @@
         <div class="footer-container">
           <div class="footer-section">
             <a href="https://github.com/etsuba19">GitHub</a>
-            <img src="images/github.png" alt="github logo" />
+            <img class="foot-logo" src="images/github.png" alt="github logo" />
             <a href="https://www.linkedin.com/in/etsub-nadew-a70870319/"
               >Linkedin</a
             >
-            <img src="images/linkedin.png" alt="linkedin logo" />
+            <img
+              class="foot-logo"
+              src="images/linkedin.png"
+              alt="linkedin logo"
+            />
           </div>
-
-          <div class="footer-section">
+          <div class="footer-cpright">
             <p>Copyright &#169; 2024, Etsub Nadew. All Right Reserved</p>
           </div>
-
-          
         </div>
       </footer>
     </div>

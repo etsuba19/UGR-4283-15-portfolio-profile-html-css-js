@@ -7,6 +7,7 @@ body {
   background: #d9f0fc;
 }
 
+
 header {
   background: #0e73aa;
   /* width: 100%; */
@@ -32,33 +33,114 @@ header {
 .logo h6 {
   text-align: center;
   padding: 0 0.5rem 0.5rem 0.5rem;
-  font-family: roboto;
+  font-family: Roboto;
   color: #b3e1f9;
   font-weight: lighter;
 }
 nav {
   align-items: center;
   justify-content: center;
-  padding-left: 30rem;
+  padding-left: 37rem;
 }
 nav ul {
   padding-bottom: 2rem;
   display: flex;
-
   justify-content: space-around;
   align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 0;
 }
 
 nav ul li {
   list-style: none;
   padding-left: 0.5rem;
   margin: 1rem;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #b3e1f9;
+  margin-right: 0px;
+  padding-right: 30px;
+  transition: border 0.3s ease;
 }
 nav ul li a {
   text-decoration: none;
-  font-family: sen;
+  font-family: Sen;
   color: #b3e1f9;
   font-weight: bold;
   letter-spacing: 0.1rem;
   /* align-items: end; */
 }
+
+nav ul li:hover,
+nav ul li:active {
+  color: #b3e1f9;
+  border-top: 2px solid #b3e1f9;
+  border-left: 2px solid #b3e1f9;
+  border-right: 2px solid #b3e1f9;
+  border-bottom: 2px solid transparent;
+  transform: scale(1.2);
+  text-shadow: none;
+}
+nav ul li:hover::after,
+nav ul li:active::after {
+  border-top: 2px solid #b3e1f9;
+  border-left: 2px solid #b3e1f9;
+  border-right: 2px solid #b3e1f9;
+  border-bottom: 2px solid transparent;
+  transform: scale(1.2);
+}
+.home {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.intro {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.5rem;
+  font-size: 5rem;
+  font-family: Signika Negative;
+}
+.heads{
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  font-family: Signika Negative;
+}
+.note {
+  padding: 3rem;
+  max-width: 30rem;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #052639;
+  font-size: 1.5rem;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: end;
+  align-content: space-between;
+  align-items: center;
+  /* padding: 1rem; */
+}
+.footer-cpright {
+  display: flex;
+  justify-content: center;
+  background-color: #0e73aa;
+  color: #b3e1f9;
+  font-family: Sen;
+}
+.foot-logo {
+  width: 4.125rem;
+  height: 4.125rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.footer-section a {
+  text-decoration: none;
+  padding-right: 0.5rem;
+}
+

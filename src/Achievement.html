@@ -13,30 +13,40 @@
       href="https://fonts.googleapis.com/css?family=Signika Negative"
       rel="stylesheet"
     />
-    <title>Achievement</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Indie+Flower&family=Mogra&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
   </head>
   <body>
-    <div>
-      <header class="header">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="Portifolio.html">Portifolio</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Achievement.html">Achievement</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="logo">
-          <img class="logo-img" src="images\logo.JPG" />
-          <h6>Etsub Nadew</h6>
-        </div>
-      </header>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="Portifolio.html">Portifolio</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Achievement.html">Achievement</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img alt="" class="logo-img" src="images\logo.JPG" />
+        <h6>Etsub Nadew</h6>
+        <i class="ri-menu-line" id="nav-toggler"></i>
+      </div>
+    </header>
 
-      <section>
-        <main>
-          <div>
+    
+        <main class="achievement-main">
+          
             <section id="achievements-summary">
               <h1>Achievements</h1>
               <p class="note">
@@ -59,39 +69,48 @@
                 <li>Speaker at Google I/O Developer Conference 2022</li>
               </ul>
             </section>
-            <section id="specific-achievement">
-              <h2 class="heads">Hackathon 2023 - Best AI-based Application</h2>
-              <p class="note">
-                In 2023, I won the Best AI-based Application Award at a national
-                hackathon. My project, an intelligent task management system
-                powered by machine learning algorithms, was praised for its
-                creativity and real-world applicability.
-              </p>
-              <img
-                src="images/hackaton.png"
-                alt="hackaton certificate"
-                width="300px"
-              />
-              <h3 class="heads">Award Ceremony</h3>
-              <p class="note">
-                The award ceremony took place at the Grand Convention Center,
-                where hundreds of software engineers gathered to showcase their
-                innovative projects. It was an exciting moment as I received the
-                award for my contribution to AI development in a competitive
-                environment. I had the chance to meet like-minded professionals
-                and get exposure to cutting-edge technologies.
-              </p>
-              <h4>Watch the Award Ceremony</h4>
+            <section id="specific-achievements">
+            
 
-              <video width="320" height="240" controls>
-                <source src="images/award.mp4" type="video/mp4" />
-                <source src="images/award.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+  <h3 class="heads">Hackathon 2023 - Best AI-based Application</h3>
+  <p class="note">
+    In 2023, I won the Best AI-based Application Award at a national
+    hackathon. My project, an intelligent task management system
+    powered by machine learning algorithms, was praised for its
+    creativity and real-world applicability.
+  </p>
+</div>
+<img
+  src="images/hackaton.png"
+  alt="hackaton certificate"
+  width="300px"
+/>
+              </div>
+              <div class="achievement">
+                <div>
+
+                  <h3 class="heads">Award Ceremony</h3>
+                  <p class="note">
+                    The award ceremony took place at the Grand Convention Center,
+                    where hundreds of software engineers gathered to showcase their
+                    innovative projects. It was an exciting moment as I received the
+                    award for my contribution to AI development in a competitive
+                    environment. I had the chance to meet like-minded professionals
+                    and get exposure to cutting-edge technologies.
+                  </p>
+                  <h4>Watch the Award Ceremony</h4>
+                </div>
+  
+                <video width="320" height="240" controls class="achieved">
+                  <source src="images/award.mp4" type="video/mp4" />
+                  <source src="images/award.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </section>
           </div>
         </main>
-      </section>
+      
       <footer>
         <div class="footer-container">
           <div class="footer-section">
@@ -110,8 +129,9 @@
           <div class="footer-cpright">
             <p>Copyright &#169; 2024, Etsub Nadew. All Right Reserved</p>
           </div>
-        </div>
       </footer>
     </div>
+    <script src="scripts/main.js"></script>
+
   </body>
 </html>

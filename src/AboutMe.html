@@ -13,49 +13,70 @@
       href="https://fonts.googleapis.com/css?family=Signika Negative"
       rel="stylesheet"
     />
-    <title>About Me</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Indie+Flower&family=Mogra&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
   </head>
   <body>
-    <div>
-      <header class="header">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="Portifolio.html">Portifolio</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Achievement.html">Achievement</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="logo">
-          <img class="logo-img" src="images\logo.JPG" />
-          <h6>Etsub Nadew</h6>
-        </div>
-      </header>
-      <section>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="Portifolio.html">Portifolio</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Achievement.html">Achievement</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img alt="" class="logo-img" src="images\logo.JPG" />
+        <h6>Etsub Nadew</h6>
+        <i class="ri-menu-line" id="nav-toggler"></i>
+      </div>
+    </header>
         <main>
-          <div>
-            <h3>About Me</h3>
-            <p>My name is Etsub Nadew. I was born in 2004GC on Aug 29th...</p>
-            <img src="images/babypicture.jpg" alt="as_a_kid" width="300" />
+          <div class="about-home">
+            <div>
+              <h3 class="heads">About Me</h3>
+              <p class="note">
+                My name is Etsub Nadew. I was born in 2004GC on Aug 29th...
+              </p>
+            </div>
+            <img src="images/babypicture.jpg" alt="as_a_kid"  />
           </div>
-          <div>
-            <h3>School Life</h3>
-            <p>When I turned 3, my parents signed me up....</p>
-            <video width="320" height="240" controls>
-              <source src="images/graduation.mp4" type="video/mp4" />
-              <source src="images/graduation.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="about-home-reversed">
+            <div>
+              <h3 class="heads">School Life</h3>
+              <p class="note">When I turned 3, my parents signed me up....</p>
+            </div>
+            <div>
+              <video  controls>
+                <source src="images/graduation.mp4" type="video/mp4" />
+                <source src="images/graduation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </main>
-      </section>
       <footer>
         <div class="footer-container">
           <div class="footer-section">
-            <a href="https://github.com/etsuba19">GitHub</a>
-            <img class="foot-logo" src="images/github.png" alt="github logo" />
+            <span>
+
+              <a href="https://github.com/etsuba19">GitHub</a>
+              <img class="foot-logo" src="images/github.png" alt="github logo" />
+            </span>
+            <span>
+
             <a href="https://www.linkedin.com/in/etsub-nadew-a70870319/"
               >Linkedin</a
             >
@@ -64,6 +85,7 @@
               src="images/linkedin.png"
               alt="linkedin logo"
             />
+            </span>
           </div>
 
           <div class="footer-cpright">
@@ -72,5 +94,6 @@
         </div>
       </footer>
     </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
